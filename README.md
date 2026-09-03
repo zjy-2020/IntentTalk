@@ -1,7 +1,7 @@
 <div align="center">
 <h2><font> </font></center> <br> <center>IntentTalk: Future-Grounded Motion Planning for Event-Aware Co-Speech Motion Generation</h2>
 
-[Jiye Zhang\*(https://scholar.google.com/citations?hl=zh-CN&user=pFNGwOcAAAAJ)], [Jianfang Li], [Jiaxu Zhang], [Ziqiang Dang](https://github.com/Xiangyue-Zhang/SemTalk), [Jianqiang Ren](https://github.com/JianqiangRen), [Liefeng Bo](https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=en), [Zhigang Tu†](http://tuzhigang.cn/)
+[Jiye Zhang\*](https://scholar.google.com/citations?hl=zh-CN&user=pFNGwOcAAAAJ), [Jianfang Li], [Jiaxu Zhang], [Ziqiang Dang](https://github.com/Xiangyue-Zhang/SemTalk), [Jianqiang Ren](https://github.com/JianqiangRen), [Liefeng Bo](https://scholar.google.com/citations?user=FJwtMf0AAAAJ&hl=en), [Zhigang Tu†](http://tuzhigang.cn/)
 
 <p align="center">
   <strong>✨ICCV 2025✨</strong>
