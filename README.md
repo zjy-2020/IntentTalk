@@ -8,8 +8,8 @@
 
 <!-- Replace the links below after release -->
 
-<a href="static/pdfs/TMM_20260903.pdf"><img src="https://img.shields.io/badge/Paper-Coming_Soon-red"></a>
-<a href="https://zjy-2020.github.io/IntentTalk/"><img src="https://img.shields.io/badge/Project-Coming_Soon-purple"></a>
+<a href="static/pdfs/TMM_20260903.pdf"><img src="https://img.shields.io/badge/Paper-red"></a>
+<a href="https://zjy-2020.github.io/IntentTalk/"><img src="https://img.shields.io/badge/Project-purple"></a>
 <a href="#"><img src="https://img.shields.io/badge/Model_Weights-Coming_Soon-yellow"></a>
 
 
