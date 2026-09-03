@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# IntentTalk: Future-Grounded Motion Planning for Event-Aware Co-Speech Motion Generation
 This is an academic paper project page template.
 
 
