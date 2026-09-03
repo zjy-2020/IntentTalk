@@ -2,311 +2,504 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="description"
+        content="Contexual-Gesture: Co-Speech Gesture Video Generation Through Context-aware Gesture Representation.">
+  <meta name="keywords" content="gesture generation, motion representation, video generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+    </div>
+  </div>
+</nav>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <h1 class="title is-1 publication-title">Semantic-Emotional Disentanglement and Alignment for Controllable Co-Speech Gesture Generation</h1>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+<div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- Arxiv PDF link -->
+<!--                             <span class="link-block">
+                        <a href="..." target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
-                    <!-- Supplementary PDF link -->
+                    <!-- SM Link. -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static/pdf/TCSVT2026_suplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Supplementary_material</span>
                     </a>
-                  </span>
+                  </span>                          
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                            <!-- Github link -->
+                <!--               <span class="link-block">
+                    <a href="..." target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code coming soon!</span>
                   </a>
-                </span>
+                </span>-->
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+                            <!-- ArXiv abstract Link -->
+<!--                             <span class="link-block">
+                  <a href="..." target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
-            </div>
-          </div>
+              </span> -->
+                        </div>
+                    </div>
+          
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
+<section class="section">
+  <div class="container is-max-widescreen">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
+      Co-speech gesture generation aims to synthesize 3D motions that are semantically consistent and rhythmically aligned with speech. Despite recent advances in diffusion-based approaches, they struggle with the inherent entanglement of linguistic semantics and affective prosody, where high-intensity emotional cues often override semantic grounding, leading to the ``semantic drift" phenomenon. To address this, we propose the Semantic-Emotional Aligned Gesture (SEAG) framework. SEAG employs a dual-stream architecture to disentangle semantic content from emotional expression via a cross-reconstruction strategy, enforcing semantic invariance while isolating emotion as a controllable modulation factor. Subsequently, we introduce an asymmetric bidirectional alignment mechanism, leveraging a Transformer-based integrator to map these features into a structured joint driving manifold. By anchoring expressive dynamics to linguistic invariants, this manifold provides a high-fidelity conditioning signal for a latent diffusion model. The orthogonality of our disentangled streams is validated through Mutual Information (MI) estimation and classifier leakage tests. Extensive experiments on the BEAT2, TED Emotion, and SHOW datasets demonstrate that SEAG achieves state-of-the-art performance, notably yielding a 15.57% reduction in FGD and a 5.0% improvement in SRGR on the TED Emotion benchmark. Furthermore, SEAG exhibits robust zero-shot generalization on out-of-distribution data, ensuring precise emotional controllability without compromising communicative clarity.
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+  
+ <!--<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="text-align: center;">Method</h2>
+    <center>
+      <div class="hero-body">
+        <img src="static/image/pipeline1.png"/>
+        <p>
+          The pipeline of GranuMamba model. Stage 1: A GraphConv-VQ-VAE discretizes gesture motion into a codebook of tokens. 
+          Stage 2: Speech, text, and identity features condition two Mamba-based streams: a fine-grained branch for local hand motions 
+          and a coarse-grained branch for global dynamics. A gated fusion integrates both, and the GraphConv-Temporal decoder 
+          reconstructs realistic gestures.
+        </p>
+      </div>
+    </center>
+  </div>
+</section> -->
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<section class="hero teaser">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3" style="text-align: center;">Method</h2>
+    <div class="hero-body">
+      <center>
+        <img src="static/image/pipeline1.png" alt="IACG Framework Pipeline" style="width: 100vw; max-width: 1200px; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);"/>
+      </center>
+      
+      <div class="content has-text-justified" style="margin-top: 20px; line-height: 1.6;">
+        <p>
+          <strong>Overview of the proposed SEAG framework.</strong> The pipeline consists of two phases: Stage 1: Input speech is first processed by frozen encoders to extract semantic \( z_s \) and emotional \( z_e \) features. These features undergo Bidirectional Alignment (Semantic-to-Emotional and Emotional-to-Semantic) to produce refined, mutually consistent representations \( z'_s, z'_e\), which are integrated via \( \mathcal{F}(\cdot) \) to formulate the joint driving manifold \( z_{fuse} \). 
+Stage 2: We utilize a VQ-VAE based Motion Prior to compress motion into a latent space. A diffusion model then synthesizes motion latents conditioned on the unified driving manifold, where \( sg[\cdot] \) denotes the stop-gradient operation to decouple the training of the prior and the diffusion transformer.
+     </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+    <div class="container">  
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column">
           
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Results</h2>
+          
+          <div class="content">
+            <!-- ==================== 第一行视频 ==================== -->
+            <div class="columns is-centered">
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/2_scott_0_103_103.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/2_scott_0_87_87.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/3_solomon_0_65_65.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/idsg_solomon_0_111_111.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            
+            <!-- ==================== 第二行视频 ==================== -->
+            <div class="columns is-centered">
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/6_carla_0_73_73.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/6_carla_0_95_95.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/7_sophie_0_1_1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/results/7_sophie_0_65_65.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
           </div>
+          <p>
+           The experimental results of our proposed model. The videos showcase how our approach produces realistic and consistent co-speech gestures, with smooth upper-body movements and expressive hand dynamics, aligned with the corresponding speech input.
+          </p>
         </div>
-      </div>
+      </div>    
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">  
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          
+          <h2 class="title is-3">Edit Gesture</h2>
+          
+          <div class="content">
+            <!-- ==================== 第一行视频 ==================== -->
+            <div class="columns is-centered">
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/01_Neutral.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/65_Neutral_to_Happy.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/73_Neutral_to_Angry.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/81_Neutral_to_Sad.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            
+            <!-- ==================== 第二行视频 ==================== -->
+            <div class="columns is-centered">
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/87_Neutral_to_Contempt.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/95_Neutral_to_Surprise.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/103_Neutral_to_Fear.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column is-one-fourth has-text-centered">
+
+                <video poster="" playsinline autoplay muted loop controls style="width: 100%; max-width: 400px;">
+                  <source src="static/edit/111_Neutral_to_Disgust.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <p>
+           The experimental results of our proposed model. The videos showcase how our approach produces realistic and consistent co-speech gestures, with smooth upper-body movements and expressive hand dynamics, aligned with the corresponding speech input.
+          </p>
+        </div>
+      </div>    
+    </div>
+  </div>
+</section>
+  
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Comparison on BEAT2</h2>
+      
+      <div id="results-carousel" class="carousel results-carousel" style="height: 400px; margin: auto;">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+            <source src="static/contrast/cut_1_1_4videos_concat.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+            <source src="static/contrast/cut_2_2_4videos_concat.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/contrast/cut_3_3_4videos_concat.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay controls muted loop height="100%">
+            <source src="static/contrast/cut_4_4_4videos_concat.mp4" type="video/mp4">
           </video>
         </div>
       </div>
+      
+      <h2 class="content has-text-centered">
+        Qualitative results compared with other methods. Our method achieves accurate gesture generation and high-quality overall visuals.
+      </h2>
     </div>
   </div>
 </section>
+
+  
+
 <!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- Video carousel -->
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+    <div class="container is-max-widescreen">
+      <!-- 标题优化 -->
+      <h2 class="title is-3 has-text-centered">Ablation Study</h2>
+      
+      <!-- 视频容器：居中，宽度自适应 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full"> <!-- 控制视频宽度，is-full 也可以 -->
+          
+          <video poster="" id="ablation-video" autoplay controls muted loop playsinline width="100%">
+            <source src="static/ablation/ablation_grid_final.mp4" type="video/mp4">
+          </video>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+        </div>
+      </div>
+      
+      <!-- Caption 优化：去掉 h2，改用 div/p，字号合适 -->
+      <div class="content has-text-centered">
+        <p>
+          <strong>Qualitative results of ablation studies.</strong> 
+          We compare the full model against variants lacking specific components. 
+          Please note how the full model (bottom-right) achieves the best trade-off between gesture realism and semantic-emotional alignment.
+        </p>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section> 
+
+<!-- End video carousel -->
+
+<!-- Video carousel -->
+<!--<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Additional Results</h2>
+
+        <div class="content">
+          <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+              <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/a/additional/2_scott_0_1_1_mam.mp4" type="video/mp4">
+              </video>
+            </div>
+            
+
+            <div class="column is-half has-text-centered">
+              <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/a/additional/2_scott_0_2_2_mam.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+              <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/a/additional/2_scott_0_3_3_mam.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half has-text-centered">
+              <video poster="" autoplay controls muted loop height="100%">
+                <source src="static/a/additional/2_scott_0_4_4_mam.mp4" type="video/mp4">
+              </video>
+            </div>
+            
+          </div>
 
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+
+        </div>
+        <h2 class="content has-text-centered">
+          Qualitative results with both body gestures and close-up facial videos. Our method generates synchronized upper-body motions and natural facial dynamics, demonstrating coherent multimodal synthesis.
     </div>
+  </div>
 </section>
-<!--End BibTex citation -->
+<!-- End video carousel -->  -->
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-4">The results of the ablation experiments</h2>
+      
+      <div id="results-carousel" class="carousel results-carousel" style="height: 400px; margin: auto;">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/ablation/65_65_4videos_concat.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/ablation/73_73_4videos_concat.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/ablation/81_81_4videos_concat.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay controls muted loop height="100%">
+            <source src="static/ablation/95_95_4videos_concat.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      <h2 class="content has-text-centered">
+        Comparison of gesture generation under different emotional conditions: demonstrating how the model generates distinct gesture patterns and postures based on target emotions while maintaining semantic content.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+<!-- End video carousel -->
+
+  
 
 
-  <footer class="footer">
+
+
+<footer class="footer" style="padding-top: 6px; padding-bottom: 6px;">
   <div class="container">
+    <div class="content has-text-centered">
+    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            Our website template comes from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and is modified based on it. Thanks to the authors contribution.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
