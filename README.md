@@ -8,7 +8,9 @@
 
 <!-- Replace the links below after release -->
 
-<a href="#"><img src="https://img.shields.io/badge/Paper-Coming_Soon-red"></a> <a href="#"><img src="[https://img.shields.io/badge/Project-Coming_Soon-purple](https://zjy-2020.github.io/IntentTalk/)"></a> <a href="#"><img src="https://img.shields.io/badge/Model_Weights-Coming_Soon-yellow"></a>
+<a href="#"><img src="https://img.shields.io/badge/Paper-Coming_Soon-red"></a>
+<a href="#"><img src="https://img.shields.io/badge/Project-Coming_Soon-purple"></a>
+<a href="#"><img src="https://img.shields.io/badge/Model_Weights-Coming_Soon-yellow"></a>
 
 
 <!-- Replace with your teaser figure -->
