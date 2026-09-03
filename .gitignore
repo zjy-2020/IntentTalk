@@ -1,0 +1,46 @@
+# Python and IDE state
+__pycache__/
+*.py[cod]
+*.so
+.idea/
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Runtime caches and logs
+.cache/
+.tmp/
+wandb/
+runs/
+logs/
+
+# Datasets, external assets, and local model repositories
+BEAT2/
+datasets/
+facebook/
+Systran/
+smplx_models/
+demo/
+
+# Checkpoints and generated artifacts
+weights/
+outputs/
+results/
+checkpoints/
+*.bin
+*.ckpt
+*.pth
+*.pt
+*.npz
+*.npy
+*.pkl
+*.lmdb
+data.mdb
+lock.mdb
+
+# Rendered media
+*.mp4
+*.mov
+*.avi
+*.wav
