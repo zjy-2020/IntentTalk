@@ -154,13 +154,12 @@
     <h2 class="title is-3" style="text-align: center;">Method</h2>
     <div class="hero-body">
       <center>
-        <img src="static/image/pipeline1.png" alt="IACG Framework Pipeline" style="width: 100vw; max-width: 1200px; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);"/>
+        <img src="static/teaser.png" alt="IACG Framework Pipeline" style="width: 100vw; max-width: 1200px; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);"/>
       </center>
       
       <div class="content has-text-justified" style="margin-top: 20px; line-height: 1.6;">
         <p>
-          <strong>Overview of the proposed SEAG framework.</strong> The pipeline consists of two phases: Stage 1: Input speech is first processed by frozen encoders to extract semantic \( z_s \) and emotional \( z_e \) features. These features undergo Bidirectional Alignment (Semantic-to-Emotional and Emotional-to-Semantic) to produce refined, mutually consistent representations \( z'_s, z'_e\), which are integrated via \( \mathcal{F}(\cdot) \) to formulate the joint driving manifold \( z_{fuse} \). 
-Stage 2: We utilize a VQ-VAE based Motion Prior to compress motion into a latent space. A diffusion model then synthesizes motion latents conditioned on the unified driving manifold, where \( sg[\cdot] \) denotes the stop-gradient operation to decouple the training of the prior and the diffusion transformer.
+         Overview of IntentTalk. Stage I learns a motion-grounded discrete future-plan vocabulary from offset future body-motion windows and freezes the pretrained tokenizer and codebook. In Stage II, a speech-to-plan predictor infers discrete plans from speech-semantic features using the frozen codebook, while the facial stream remains directly speech-conditioned. The predicted plans guide body-motion generation through an event-aware semantic gate for when semantic motion is activated and hierarchical plan-conditioned FiLM for how the planned motion is realized. Future motion is required only for plan supervision during training, not at inference.
      </p>
       </div>
     </div>
