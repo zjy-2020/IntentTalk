@@ -126,7 +126,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-      Co-speech gesture generation aims to synthesize 3D motions that are semantically consistent and rhythmically aligned with speech. Despite recent advances in diffusion-based approaches, they struggle with the inherent entanglement of linguistic semantics and affective prosody, where high-intensity emotional cues often override semantic grounding, leading to the ``semantic drift" phenomenon. To address this, we propose the Semantic-Emotional Aligned Gesture (SEAG) framework. SEAG employs a dual-stream architecture to disentangle semantic content from emotional expression via a cross-reconstruction strategy, enforcing semantic invariance while isolating emotion as a controllable modulation factor. Subsequently, we introduce an asymmetric bidirectional alignment mechanism, leveraging a Transformer-based integrator to map these features into a structured joint driving manifold. By anchoring expressive dynamics to linguistic invariants, this manifold provides a high-fidelity conditioning signal for a latent diffusion model. The orthogonality of our disentangled streams is validated through Mutual Information (MI) estimation and classifier leakage tests. Extensive experiments on the BEAT2, TED Emotion, and SHOW datasets demonstrate that SEAG achieves state-of-the-art performance, notably yielding a 15.57% reduction in FGD and a 5.0% improvement in SRGR on the TED Emotion benchmark. Furthermore, SEAG exhibits robust zero-shot generalization on out-of-distribution data, ensuring precise emotional controllability without compromising communicative clarity.
+      Co-speech gesture generation has made substantial progress in motion quality and speech--motion synchronization, yet existing methods predominantly map speech directly to motion or enhance semantic information at individual temporal positions. Such formulations provide limited explicit modeling of how a semantically relevant gesture should evolve before and around its occurrence. We propose IntentTalk, a hierarchical speech-to-plan-to-motion framework that introduces a motion-grounded discrete plan as an intermediate representation between speech understanding and holistic motion generation. During training, a future motion-plan tokenizer encodes upcoming body-motion windows into discrete plan tokens, providing future-grounded supervision without requiring manually defined gesture categories or intention labels. A speech-to-plan predictor subsequently learns to infer these plans solely from speech-semantic features, enabling future-aware planning at inference without access to future motion. The predicted plans guide generation through two complementary mechanisms: an event-aware semantic gate refines when semantic body motion should be activated, while hierarchical plan-conditioned FiLM controls how the planned motion is realized across shared, body-part, and motion-token representations. Extensive experiments on BEAT2 and GES-X datasets demonstrate that IntentTalk achieves superior performance over representative state of-the-art methods, validating the effectiveness of the proposed future-grounded motion planning framework.
     <!--/ Abstract. -->
   </div>
 </section>
@@ -137,12 +137,9 @@
     <h2 class="title is-3" style="text-align: center;">Method</h2>
     <center>
       <div class="hero-body">
-        <img src="static/image/pipeline1.png"/>
+        <img src="static/images/teaser.png"/>
         <p>
-          The pipeline of GranuMamba model. Stage 1: A GraphConv-VQ-VAE discretizes gesture motion into a codebook of tokens. 
-          Stage 2: Speech, text, and identity features condition two Mamba-based streams: a fine-grained branch for local hand motions 
-          and a coarse-grained branch for global dynamics. A gated fusion integrates both, and the GraphConv-Temporal decoder 
-          reconstructs realistic gestures.
+          Overview of IntentTalk. Stage I learns a motion-grounded discrete future-plan vocabulary from offset future body-motion windows and freezes the pretrained tokenizer and codebook. In Stage II, a speech-to-plan predictor infers discrete plans from speech-semantic features using the frozen codebook, while the facial stream remains directly speech-conditioned. The predicted plans guide body-motion generation through an event-aware semantic gate for when semantic motion is activated and hierarchical plan-conditioned FiLM for how the planned motion is realized. Future motion is required only for plan supervision during training, not at inference.
         </p>
       </div>
     </center>
