@@ -548,7 +548,7 @@ If you find this work useful for your research, please consider citing:
 ```bibtex
 @article{zhang2026intenttalk,
   title   = {IntentTalk: Future-Grounded Motion Planning for Co-Speech Gesture Generation},
-  author  = {Jiye Zhang and ...},
+  author  = {Jiye Zhang, Guibiao Liao, Dingwei Liu, Gaolin Yang, Xiuhua Jiang, and Jiangbo Xu},
   journal = {Under Review},
   year    = {2026}
 }
