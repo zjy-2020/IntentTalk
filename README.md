@@ -19,7 +19,7 @@ speech-driven motion generation, BEAT2, SMPL-X.
 
 <!-- Replace with your teaser figure -->
 
-<img src="assets/teaser.png" alt="IntentTalk teaser" style="width:100%;">
+<img src="static/teaser.png" alt="IntentTalk teaser" style="width:100%;">
 
 </div>
 
