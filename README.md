@@ -10,16 +10,10 @@
 
 <a href="#"><img src="https://img.shields.io/badge/Paper-Coming_Soon-red"></a> <a href="#"><img src="https://img.shields.io/badge/Project-Coming_Soon-purple"></a> <a href="#"><img src="https://img.shields.io/badge/Model_Weights-Coming_Soon-yellow"></a>
 
-<p>
-<sub>
-Keywords: co-speech gesture generation, future motion planning, semantic gestures,
-speech-driven motion generation, BEAT2, SMPL-X.
-</sub>
-</p>
 
 <!-- Replace with your teaser figure -->
 
-<img src="assets/teaser.png" alt="IntentTalk teaser" style="width:100%;">
+<img src="static/teaser.png" alt="IntentTalk teaser" style="width:100%;">
 
 </div>
 
@@ -548,7 +542,7 @@ If you find this work useful for your research, please consider citing:
 ```bibtex
 @article{zhang2026intenttalk,
   title   = {IntentTalk: Future-Grounded Motion Planning for Co-Speech Gesture Generation},
-  author  = {Jiye Zhang and ...},
+  author  = {Jiye Zhang, Guibiao Liao, Dingwei Liu, Gaolin Yang, Xiuhua Jiang, and Jiangbo Xu},
   journal = {Under Review},
   year    = {2026}
 }
