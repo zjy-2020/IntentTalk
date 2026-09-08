@@ -21,7 +21,7 @@
 
 # 📣 Updates
 
-* **[Coming Soon]** Release training and inference code for IntentTalk.
+* **[2026-09]** Release training and inference code for IntentTalk.
 * **[Coming Soon]** Release pretrained future motion planner and IntentTalk checkpoints.
 * **[Coming Soon]** Release evaluation scripts and qualitative examples on BEAT2.
 
