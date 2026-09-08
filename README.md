@@ -106,7 +106,7 @@ The predicted plan subsequently provides structured guidance for detailed motion
 | MambaTalk      |     5.366 |     0.781 |     13.05 |     0.290 | 6.289 |     6.897 |
 | RAG-Gesture    |     8.082 |     0.734 |     11.97 |     0.390 | 7.248 |     6.947 |
 | SemTalk        |     4.278 |     0.777 |     12.91 |     0.430 | 6.153 |     6.938 |
-| **IntentTalk** | **4.012** | **0.817** | **13.95** | **0.442** |     — | **6.462** |
+| **IntentTalk** | **3.812** | **0.817** | **13.95** | **0.442** |     — | **6.462** |
 
 IntentTalk achieves improved motion quality and semantic relevance while maintaining strong
 gesture diversity and speech-motion synchronization. In particular, the improvements in
@@ -127,8 +127,8 @@ planning conditions.
 | No Plan                   |     4.347 |     0.424 |      0.668 |         – |         – |
 | Random Plan               |     4.412 |     0.418 |      0.641 |         – |         – |
 | Current Motion Token      |     4.286 |     0.429 |      0.706 |     0.462 |     0.731 |
-| **Predicted Future Plan** | **4.012** | **0.442** |  **0.784** | **0.536** | **0.798** |
-| Oracle Future Plan        |     3.846 |     0.457 |      0.836 |         – |         – |
+| **Predicted Future Plan** | **3.812** | **0.442** |  **0.784** | **0.536** | **0.798** |
+| Oracle Future Plan        |     3.615 |     0.457 |      0.836 |         – |         – |
 
 Compared with current-state motion tokens, future-grounded plans provide more informative
 guidance for semantic event prediction and motion generation. The oracle-plan result further
